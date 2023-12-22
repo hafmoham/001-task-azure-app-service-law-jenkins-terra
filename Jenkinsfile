@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                    //checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHubcredentials', url: 'https://github.com/Selmouni-Abdelilah/AzureWebApp ']])
+                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHubcredentials', url: '001-task-azure-app-service-law-jenkins-terra']])
                 }
             }
         }
