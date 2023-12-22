@@ -5,14 +5,14 @@ pipeline {
     }
     environment {
         WEBAPP_NAME = "webapp1937moha"  
-        RES_GROUP = "rg_abdel_proc" 
+        RES_GROUP = "rg_abdel_proc_moha" 
         WORKSPACE_NAME = "azurejenkinsworkspace17moha"
     }
     stages {
         stage('Checkout') {
             steps {
                 script {
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHubcredentials', url: 'https://github.com/Selmouni-Abdelilah/AzureWebApp ']])
+                    //checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GitHubcredentials', url: 'https://github.com/Selmouni-Abdelilah/AzureWebApp ']])
                 }
             }
         }
