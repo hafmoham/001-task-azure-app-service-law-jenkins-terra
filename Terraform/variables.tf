@@ -1,3 +1,16 @@
+variable "owner" {
+  default = ""
+  description = "Please enter the owner"
+  type = string
+}
+
+variable "environment" {
+  type = string
+  description = "Please specify the environment"
+  default = ""
+
+}
+
 variable "deploy_location" {
   type        = string
   default     = "eastus"
