@@ -21,8 +21,6 @@ resource "azurerm_service_plan" "appserviceplan" {
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Linux"
   sku_name            = "B1"
-  reserved = true
-
   tags = {
     owner = var.owner
     environment = var.environment
