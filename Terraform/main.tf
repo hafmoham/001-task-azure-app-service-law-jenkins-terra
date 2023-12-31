@@ -52,7 +52,7 @@ resource "azurerm_app_service_source_control" "sourcecontrol" {
   use_mercurial      = false
 }
 
-output "app_service_url" {
-  value       = azurerm_app_service.app-service.default_site_hostname
-  description = "Default URL to access the app service."
-}
+# output "app_service_url" {
+#  value       = azurerm_app_service.app-service.default_site_hostname
+#  description = "Default URL to access the app service."
+# }
