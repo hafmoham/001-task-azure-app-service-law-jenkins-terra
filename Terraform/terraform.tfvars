@@ -3,9 +3,9 @@
 
 ################### Global Variables ###############
 
-location = "East US"
-resource_group_name = "srm-poc-project"
-storage_account_name = "srmpocstorageaccount"
+# location = "East US"
+# resource_group_name = "srm-poc-project"
+# storage_account_name = "srmpocstorageaccount"
 environment = "development"
 owner = "hafeez.mohammed"
 
