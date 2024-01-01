@@ -21,6 +21,10 @@ resource "azurerm_service_plan" "appserviceplan" {
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Linux"
   sku_name            = "B1"
+  tags = {
+    owner = var.owner
+    environment = var.environment
+  }
 }
 
 # Create the web app, pass in the App Service Plan ID
@@ -33,6 +37,10 @@ resource "azurerm_linux_web_app" "webapp" {
   site_config { 
     minimum_tls_version = "1.2"
   }
+tags = {
+    owner = var.owner
+    environment = var.environment
+  }
 }
 
 #  Deploy code from a public GitHub repo
@@ -43,3 +51,8 @@ resource "azurerm_app_service_source_control" "sourcecontrol" {
   use_manual_integration = true
   use_mercurial      = false
 }
+
+# output "app_service_url" {
+#  value       = azurerm_app_service.app-service.default_site_hostname
+#  description = "Default URL to access the app service."
+# }
