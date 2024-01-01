@@ -4,6 +4,7 @@ pipeline {
         terraform "terraform"
     }
     environment {
+        APPSERVICE_PLAN_NAME = "vterramodules-appservplan"
         WEBAPP_NAME = "vterramodules-webapp"  
         RES_GROUP = "vterramodules-rg" 
         WORKSPACE_NAME = "vterramodules-law"
@@ -38,7 +39,7 @@ pipeline {
                             def ARM_TENANT_ID = env.TENANT_ID
                             sh 'terraform fmt'
                             sh 'terraform init -upgrade'
-                            sh " terraform apply --auto-approve -var 'resourcegroupname=${env.RES_GROUP}' -var 'webappname=${env.WEBAPP_NAME}' -var 'workspacename=${env.WORKSPACE_NAME}'"
+                            sh " terraform apply --auto-approve -var 'resourcegroupname=${env.RES_GROUP}' -var 'appserviceplanname=${env.APPSERVICE_PLAN_NAME}' -var 'webappname=${env.WEBAPP_NAME}' -var 'workspacename=${env.WORKSPACE_NAME}'"
                         }
                 }
                 }

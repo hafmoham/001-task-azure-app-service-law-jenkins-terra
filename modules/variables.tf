@@ -34,7 +34,7 @@ variable "webappname" {
 
 variable "workspacename" {
   type        = string
-  default     = "vterraworkspace"
+  default     = "law-vterramodules"
 }
 variable "tenant_id" {
   type        = string
