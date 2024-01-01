@@ -18,17 +18,17 @@ variable "deploy_location" {
 
 variable "rg_shared_name" {
   type        = string
-  default     = "rg-shared-resources-vterra"
+  default     = "rg-vterramodules"
 }
 
 variable "webappname" {
   type        = string
-  default     = "webapp-134rt4-vterra"
+  default     = "webapp-vterramodules"
 }
 
 variable "workspacename" {
   type        = string
-  default     = "vterraworkspace13456"
+  default     = "vterraworkspace"
 }
 variable "tenant_id" {
   type        = string

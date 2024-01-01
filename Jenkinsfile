@@ -4,9 +4,9 @@ pipeline {
         terraform "terraform"
     }
     environment {
-        WEBAPP_NAME = "webapp1937moha"  
-        RES_GROUP = "rg_abdel_proc_moha" 
-        WORKSPACE_NAME = "azurejenkinsworkspace17moha"
+        WEBAPP_NAME = "vterramodules-webapp"  
+        RES_GROUP = "vterramodules-rg" 
+        WORKSPACE_NAME = "vterramodules-law"
     }
     stages {
         stage('Checkout') {
