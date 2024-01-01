@@ -18,7 +18,7 @@ variable "deploy_location" {
 
 variable "resourcegroupname" {
   type        = string
-  default     = "rg-vterramodules"
+  default     = ""
 }
 
 

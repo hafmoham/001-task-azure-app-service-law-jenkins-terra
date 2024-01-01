@@ -1,6 +1,6 @@
 module "app-service" {
     source = "./modules/app-service"
-    location            = var.location
+    location            = "${var.deploy_location}" # var.location
     environment         = var.environment
     owner               = var.owner
     description         = "Linux Docker container app"
