@@ -16,9 +16,15 @@ variable "deploy_location" {
   default     = "eastus"
 }
 
-variable "rg_shared_name" {
+variable "resourcegroupname" {
   type        = string
   default     = "rg-vterramodules"
+}
+
+
+variable appserviceplanname{
+  type        = string
+  default     = "appservplan-vterramodules"
 }
 
 variable "webappname" {

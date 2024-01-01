@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  name     = var.rg_shared_name
+  name     = var.resourcegroupname
   location = var.deploy_location
 }
 
@@ -16,7 +16,7 @@ resource "azurerm_log_analytics_workspace" "law" {
 # Creates App Service plan
 
 resource "azurerm_service_plan" "appserviceplan" {
-  name                = "app-serviceplam1983634moha"
+  name                = var.appserviceplanname
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Linux"
