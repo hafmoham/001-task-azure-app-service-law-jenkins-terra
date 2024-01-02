@@ -11,7 +11,7 @@ module "app-service" {
     inside_location            = var.deploy_location # var.location
     environment         = var.environment
     owner               = var.owner
-    description         = "Linux Docker container app"
+    # description         = "Linux Docker container app"
     # app_name            = var.app_service_name
     # app_port            = var.app_service_port
     # docker_image        = var.app_service_image
