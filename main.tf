@@ -8,7 +8,7 @@ provider "azurerm" {
 
 module "app-service" {
     source = "./modules/app-service"
-    location            = var.deploy_location # var.location
+    inside_location            = var.deploy_location # var.location
     environment         = var.environment
     owner               = var.owner
     description         = "Linux Docker container app"
