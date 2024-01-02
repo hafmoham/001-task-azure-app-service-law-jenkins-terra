@@ -1,3 +1,9 @@
+provider "azurerm" {
+    features {}
+}
+
+########## Modules ################
+
 module "app-service" {
     source = "./modules/app-service"
     location            = "${var.deploy_location}" # var.location
