@@ -11,7 +11,7 @@ variable "environment" {
 
 }
 
-variable "deploy_location" {
+variable "inside_location" {
   type        = string
   default     = "eastus"
 }
