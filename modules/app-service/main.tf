@@ -6,7 +6,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = var.resourcegroupname
-  location = var.deploy_location
+  location = var.inside_location
 }
 
 # Creates Log Anaylytics Workspace
