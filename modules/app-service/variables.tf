@@ -13,7 +13,7 @@ variable "environment" {
 
 variable "inside_location" {
   type        = string
-  default     = "eastus"
+  default     = ""
 }
 
 variable "resourcegroupname" {
