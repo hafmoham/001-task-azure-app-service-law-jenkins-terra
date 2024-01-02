@@ -1,3 +1,9 @@
+provider "azurerm" {
+    features {}
+}
+
+########## Modules ################
+
 resource "azurerm_resource_group" "rg" {
   name     = var.resourcegroupname
   location = var.deploy_location
