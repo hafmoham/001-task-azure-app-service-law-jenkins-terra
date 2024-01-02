@@ -28,7 +28,7 @@ pipeline {
         stage('Terraform ') {
             steps {
                 script {
-                    dir('modules') {
+                    dir('modules/logic-apps') {
                         withCredentials([azureServicePrincipal(credentialsId: 'Azure_credentials',
                                         subscriptionIdVariable: 'SUBS_ID',
                                         clientIdVariable: 'CLIENT_ID',
