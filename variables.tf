@@ -1,46 +1,46 @@
 variable "owner" {
-  default = ""
+  default     = ""
   description = "Please enter the owner"
-  type = string
+  type        = string
 }
 
 variable "environment" {
-  type = string
+  type        = string
   description = "Please specify the environment"
-  default = ""
+  default     = ""
 
 }
 
 variable "deploy_location" {
-  type        = string
-  default     = "eastus"
+  type    = string
+  default = "eastus"
 }
 
 variable "resourcegroupname" {
-  type        = string
-  default     = "rg-vterramodules"
+  type    = string
+  default = "rg-vterra"
 }
 
 
-variable appserviceplanname{
-  type        = string
-  default     = "appservplan-vterramodules"
+variable "appserviceplanname" {
+  type    = string
+  default = "appservplan-vterra"
 }
 
 variable "webappname" {
-  type        = string
-  default     = "webapp-vterramodules"
+  type    = string
+  default = "webapp-vterra"
 }
 
 variable "workspacename" {
-  type        = string
-  default     = "law-vterramodules"
+  type    = string
+  default = "law-vterra"
 }
 variable "tenant_id" {
-  type        = string
-  default     = "11111111-1111-1111-1111-111111111111"
+  type    = string
+  default = "11111111-1111-1111-1111-111111111111"
 }
 variable "subscription_id" {
-  type        = string
-  default     = "00000000-0000-0000-0000-000000000000"
+  type    = string
+  default = "00000000-0000-0000-0000-000000000000"
 }
